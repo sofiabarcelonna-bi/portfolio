@@ -728,6 +728,7 @@ textarea {
   color: white;
 }
 
+/* --- Sección Sobre Mi --- */
 .sobre-mi-container {
   display: flex;
   justify-content: space-between;
@@ -776,47 +777,66 @@ textarea {
 }
 
 /* --- Sección Formación Académica --- */
-.formacion-academica-section {
-  background-color: #e8f5e9; /* verde institucional claro */
-  padding: 4rem 2rem;
+.formacion-section {
+  padding: 50px 20px;
+  background-color: #f4f8f4; /* Verde muy claro y sobrio */
 }
 
-.formacion-bloque {
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  padding: 2rem;
-  margin-bottom: 2rem;
+.section-title {
+  font-size: 2rem;
+  color: #2c5f2d; /* Verde formal */
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.formacion-titulo {
-  color: #256029; /* verde sobrio */
+.formacion-card {
+  background-color: #ffffff;
+  border-left: 6px solid #2c5f2d; /* Lateral verde para separar secciones */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.formacion-subtitulo {
   font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  color: #1e392a;
+  margin-bottom: 10px;
 }
 
-.formacion-etiqueta {
-  background-color: #c8e6c9;
-  color: #256029;
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.25rem 0.75rem;
-  border-radius: 9999px;
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-.formacion-texto {
-  color: #444;
-  text-align: justify;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.formacion-lista {
+.formacion-card ul {
   padding-left: 1.5rem;
-  color: #444;
-  text-align: justify;
-  font-size: 1rem;
+  list-style: none;
+}
+
+.formacion-card ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.formacion-card ul li::before {
+  content: "\2022"; /* bullet redondo */
+  position: absolute;
+  left: 0;
+  color: #2c5f2d;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .formacion-section {
+    padding: 30px 10px;
+  }
+  .formacion-card {
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .formacion-subtitulo {
+    font-size: 1.1rem;
+  }
 }
