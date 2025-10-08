@@ -785,6 +785,7 @@ textarea {
 /* Título principal (igual que “Sobre mí”) */
 .section-title {
   font-size: 3rem; /* mismo tamaño que el h2 de “Sobre mí” */
+  padding-left: 1.5rem; 
   color: #2c5f2d;
   text-align: center;
   margin-bottom: 50px;
@@ -812,19 +813,18 @@ textarea {
 
 /* Nivel: Posgrado / Grado */
 .formacion-nivel {
-  font-size: 1.3rem;
-  font-style: italic;
-  color: #2c5f2d;
-  margin-bottom: 6px;
-  display: block;
+   font-size: 1rem; /* o 16px */
+  font-weight: 600;
+  color: #2c5f2d; 
+  margin-bottom: 0.3rem;
 }
 
 /* Universidad y período (más legible que antes) */
 .formacion-detalle {
-  font-size: 1.35rem; /* antes se renderizaba muy chico */
-  color: #333;
-  margin-bottom: 15px;
-  display: block;
+  font-size: 1rem; /* o 16px */
+  font-weight: 600;
+  color: #2c5f2d; 
+  margin-bottom: 0.3rem;
 }
 
 /* Listado de puntos */
