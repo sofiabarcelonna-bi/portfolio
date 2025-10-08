@@ -871,3 +871,118 @@ textarea {
     font-size: 1.1rem;
   }
 }
+
+/* --- Sección Experiencia Laboral --- */
+.experiencia-section {
+  padding: 80px 40px;
+  background-color: #fffaf6; /* Fondo neutro cálido */
+}
+
+/* Título principal */
+.experiencia-titulo {
+  font-size: 3rem;
+  color: #8c3a27; /* Bordó-anaranjado sobrio */
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Contenedor general */
+.experiencia-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Tarjeta de experiencia */
+.experiencia-card {
+  background-color: #ffffff;
+  border-left: 6px solid #8c3a27;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+/* Cargo y empresa */
+.experiencia-subtitulo {
+  font-size: 1.8rem;
+  color: #5a1f15;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Fechas */
+.experiencia-fechas {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8c3a27;
+  margin-bottom: 0.8rem;
+}
+
+/* Párrafo de funciones */
+.experiencia-card p {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Lista de tareas */
+.experiencia-card ul {
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.experiencia-card ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.experiencia-card ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #8c3a27;
+  font-size: 1.2rem;
+}
+
+/* Habilidades - "Pills" */
+.experiencia-skills {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background-color: #f0d5c9;
+  color: #5a1f15;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .experiencia-section {
+    padding: 40px 20px;
+  }
+  .experiencia-titulo {
+    font-size: 2.4rem;
+  }
+  .experiencia-subtitulo {
+    font-size: 1.5rem;
+  }
+  .experiencia-card p,
+  .experiencia-fechas,
+  .experiencia-card ul li,
+  .skill-pill {
+    font-size: 1.1rem;
+  }
+}
