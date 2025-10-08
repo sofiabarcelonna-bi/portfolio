@@ -778,18 +778,23 @@ textarea {
 
 /* --- Sección Formación Académica --- */
 .formacion-section {
-  padding: 80px 0;
+  padding: 80px 40px;
   background-color: #f4f8f4; /* Verde claro y sobrio */
 }
 
-/* Título principal (igual que “Sobre mí”) */
-.section-title {
-  font-size: 3rem; /* mismo tamaño que el h2 de “Sobre mí” */
-  padding-left: 1.5rem; 
+/* Título principal */
+.formacion-titulo {
+  font-size: 3rem;
   color: #2c5f2d;
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
+}
+
+/* Contenedor general */
+.formacion-container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* Tarjeta individual */
@@ -805,26 +810,25 @@ textarea {
 
 /* Subtítulo: “Máster en…” o “Licenciatura en…” */
 .formacion-subtitulo {
-  font-size: 1.6rem; /* ligeramente más grande que el texto */
+  font-size: 1.8rem;
   color: #1e392a;
-  font-weight: 600;
-  margin-bottom: 8px;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 /* Nivel: Posgrado / Grado */
-.formacion-nivel {
-   font-size: 1rem; /* o 16px */
+.formacion-etiqueta {
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #2c5f2d; 
-  margin-bottom: 0.3rem;
+  color: #2c5f2d;
+  margin-bottom: 0.5rem;
 }
 
-/* Universidad y período (más legible que antes) */
-.formacion-detalle {
-  font-size: 1rem; /* o 16px */
-  font-weight: 600;
-  color: #2c5f2d; 
-  margin-bottom: 0.3rem;
+/* Detalles como universidad y período */
+.formacion-card > p {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
 }
 
 /* Listado de puntos */
@@ -838,7 +842,7 @@ textarea {
   margin-bottom: 10px;
   padding-left: 25px;
   line-height: 1.8;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: justify;
 }
 
@@ -855,13 +859,15 @@ textarea {
   .formacion-section {
     padding: 40px 20px;
   }
-  .section-title {
+  .formacion-titulo {
     font-size: 2.4rem;
   }
   .formacion-subtitulo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
-  .formacion-detalle {
-    font-size: 1.2rem;
+  .formacion-card > p,
+  .formacion-etiqueta,
+  .formacion-card ul li {
+    font-size: 1.1rem;
   }
 }
