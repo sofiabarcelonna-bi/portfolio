@@ -702,3 +702,28 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.cv-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cv-buttons .btn {
+  background-color: white;
+  color: #0077cc;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #0077cc;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cv-buttons .btn:hover {
+  background-color: #0077cc;
+  color: white;
+}
