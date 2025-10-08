@@ -727,3 +727,48 @@ textarea {
   background-color: #0077cc;
   color: white;
 }
+
+.about-me {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.about-me__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-me__image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.about-me__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-me__text {
+  flex: 2 1 500px;
+}
+
+.about-me__text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-me__text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
