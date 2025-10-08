@@ -729,24 +729,25 @@ textarea {
 }
 
 .sobre-mi-container {
-   display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;     
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
-
 .sobre-mi-foto {
-  flex: 0 0 450px; 
+    flex: 0 0 450px;         
+  display: flex;
+  align-items: stretch;      
 }
 
 .sobre-mi-foto img {
   width: 100%;
-  height: auto;
+  height: 100%;           
+  object-fit: cover;       
   border-radius: 14px;
-  object-fit: cover;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
@@ -760,6 +761,7 @@ textarea {
   line-height: 2;       
   color: #2a2a2a;            
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .sobre-mi-texto h2.heading-secondary {
