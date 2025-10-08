@@ -783,15 +783,15 @@ textarea {
 }
 
 .section-title {
-  font-size: 2rem;
-  color: #2c5f2d; /* Verde formal */
+  font-size: 3rem; /* Igual que el h2 de Sobre mí */
+  color: #2c5f2d;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .formacion-card {
   background-color: #ffffff;
-  border-left: 6px solid #2c5f2d; /* Lateral verde para separar secciones */
+  border-left: 6px solid #2c5f2d;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   padding: 30px;
@@ -800,7 +800,7 @@ textarea {
 }
 
 .formacion-subtitulo {
-  font-size: 1.25rem;
+  font-size: 1.3rem; /* Igual que el párrafo en Sobre mí */
   color: #1e392a;
   margin-bottom: 10px;
 }
@@ -815,10 +815,12 @@ textarea {
   margin-bottom: 10px;
   padding-left: 25px;
   line-height: 1.6;
+  font-size: 1.3rem; /* Uniforme con Sobre mí */
+  text-align: justify;
 }
 
 .formacion-card ul li::before {
-  content: "\2022"; /* bullet redondo */
+  content: "\2022";
   position: absolute;
   left: 0;
   color: #2c5f2d;
@@ -834,9 +836,12 @@ textarea {
     padding: 20px;
   }
   .section-title {
-    font-size: 1.5rem;
+    font-size: 2.2rem; /* Ajustado proporcionalmente */
   }
   .formacion-subtitulo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  .formacion-card ul li {
+    font-size: 1.2rem;
   }
 }
