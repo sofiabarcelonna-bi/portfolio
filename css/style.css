@@ -729,26 +729,25 @@ textarea {
 }
 
 .sobre-mi-container {
-  display: flex;
+   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 30px;
 }
 
 .sobre-mi-foto {
-  flex: 0 0 400px; 
+  flex: 0 0 450px; 
 }
 
 .sobre-mi-foto img {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .sobre-mi-texto {
@@ -757,19 +756,19 @@ textarea {
 }
 
 .sobre-mi-texto p {
-  font-size: 1.15rem; 
-  line-height: 1.8;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.3rem;       
+  line-height: 2;       
+  color: #2a2a2a;            
+  margin-bottom: 20px;
 }
 
 .sobre-mi-texto h2.heading-secondary {
-   font-size: 2.5rem; /* antes estaba en 2.2rem */
-  margin-bottom: 25px;
-  color: #1a1a1a;
+   font-size: 3rem;         
+  margin-bottom: 30px;
+  color: #111;
 }
 
 .sobre-mi-section {
-  background-color: #f9f9f9;
-  padding: 60px 0;
+  background-color: #f2f2f2;
+  padding: 80px 0;
 }
