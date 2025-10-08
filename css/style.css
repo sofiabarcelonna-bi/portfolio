@@ -728,47 +728,43 @@ textarea {
   color: white;
 }
 
-.about-me {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-}
-
-.about-me__container {
+.sobre-mi-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
+  padding: 40px 20px;
 }
 
-.about-me__image {
-  flex: 1 1 300px;
-  max-width: 400px;
-  text-align: center;
+.sobre-mi-foto {
+  flex: 0 0 350px;
 }
 
-.about-me__image img {
+.sobre-mi-foto img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.about-me__text {
-  flex: 2 1 500px;
+.sobre-mi-texto {
+  flex: 1;
+  min-width: 300px;
 }
 
-.about-me__text h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.sobre-mi-texto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
 }
 
-.about-me__text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+.sobre-mi-texto h2.heading-secondary {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
 }
-
