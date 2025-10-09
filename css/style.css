@@ -182,17 +182,21 @@ textarea {
       padding: 8rem 0; } }
 
 .text-primary {
-   color: #111;
+  color: #111;
   font-size: 2.2rem;
   text-align: center;
   width: fit-content;
   margin: 2rem auto 0;
   line-height: 1.6;
-  background: rgba(200, 190, 180, 0.55); /* ← antes estaba en 0.8 */
+  background: rgba(200, 190, 180, 0.45); /* Ajuste con más transparencia */
   padding: 1.2rem 2rem;
   border-radius: 12px;
   backdrop-filter: blur(3px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* 🔸 Animación */
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.3s;
 }
 @media only screen and (max-width: 37.5em) {
   .text-primary {
@@ -1106,5 +1110,17 @@ textarea {
 
   .proyecto-pdf {
     height: 400px;
+  }
+}
+
+/* 🔹 Animación de aparición elegante */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
