@@ -835,13 +835,14 @@ textarea {
 /* --- Sección Formación Académica --- */
 .formacion-section {
   padding: 80px 40px;
-  background-color: #e6e8e3; /* Fondo claro elegante */
+  background-color: #f2f2f2; /* Fondo gris claro sobrio */
+  border-bottom: 1px solid #d4d2d2; /* Línea divisoria sutil */
 }
 
 /* Título principal */
 .formacion-titulo {
   font-size: 3rem;
-  color: #1f2a33; /* Azul gris oscuro sobrio */
+  color: #000000; /* Negro para uniformar los títulos */
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -856,7 +857,7 @@ textarea {
 /* Tarjeta individual */
 .formacion-card {
   background-color: #ffffff;
-  border-left: 6px solid #3f5468; /* Azul gris profesional */
+  border-left: 6px solid #3f5468; /* Azul gris oscuro profesional */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   padding: 40px;
@@ -937,13 +938,14 @@ textarea {
 /* --- Sección Experiencia Laboral --- */
 .experiencia-section {
   padding: 80px 40px;
-  background-color: #fffaf6; /* Fondo neutro cálido */
+  background-color: #f2f2f2; /* Fondo gris claro uniforme */
+  border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
 }
 
 /* Título principal */
 .experiencia-titulo {
   font-size: 3rem;
-  color: #8c3a27; /* Bordó-anaranjado sobrio */
+  color: #000000; /* Título negro */
   text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -958,18 +960,24 @@ textarea {
 /* Tarjeta de experiencia */
 .experiencia-card {
   background-color: #ffffff;
-  border-left: 6px solid #8c3a27;
+  border-left: 6px solid #3f5468; /* Azul gris profesional */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   padding: 40px;
   margin-bottom: 35px;
   text-align: justify;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experiencia-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
 /* Cargo y empresa */
 .experiencia-subtitulo {
   font-size: 1.8rem;
-  color: #5a1f15;
+  color: #2d3b45; /* Azul gris intermedio */
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -978,7 +986,7 @@ textarea {
 .experiencia-fechas {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #8c3a27;
+  color: #3f5468;
   margin-bottom: 0.8rem;
 }
 
@@ -1008,7 +1016,7 @@ textarea {
   content: "\2022";
   position: absolute;
   left: 0;
-  color: #8c3a27;
+  color: #3f5468;
   font-size: 1.2rem;
 }
 
@@ -1021,8 +1029,8 @@ textarea {
 }
 
 .skill-pill {
-  background-color: #f0d5c9;
-  color: #5a1f15;
+  background-color: #e0e4e8;
+  color: #2d3b45;
   font-size: 1.1rem;
   padding: 6px 14px;
   border-radius: 25px;
@@ -1052,25 +1060,26 @@ textarea {
 /* --- Sección Proyectos --- */
 .proyectos-section {
   padding: 80px 40px;
-  background-color: #f7f9fb; /* Fondo sobrio y profesional */
+  background-color: #f2f2f2; /* Fondo gris claro */
+  border-bottom: 1px solid #d4d2d2;
 }
 
 /* Título principal */
 .proyectos-titulo {
   font-size: 3rem;
-  color: #1f2d3a;
+  color: #000000;
   text-align: center;
   margin-bottom: 60px;
   font-weight: 700;
 }
 
-/* Contenedor por categoría ("cilindro") */
+/* Contenedor por categoría */
 .proyectos-categoria {
   max-width: 1100px;
   margin: 0 auto 80px auto;
   padding: 50px;
   background-color: #ffffff;
-  border-left: 6px solid #5b7aa1; /* Color por defecto, cambiable según categoría */
+  border-left: 6px solid #3f5468;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
@@ -1078,13 +1087,13 @@ textarea {
 /* Subtítulo de categoría */
 .proyectos-subtitulo {
   font-size: 2rem;
-  color: #1f2d3a;
+  color: #2d3b45;
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
 }
 
-/* Grid de proyectos (slicers) */
+/* Grid de proyectos */
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1092,10 +1101,10 @@ textarea {
   justify-items: center;
 }
 
-/* Tarjeta individual (slicer) */
+/* Tarjeta individual */
 .proyecto-card {
-  background-color: #f9fafb;
-  border-left: 5px solid #5b7aa1;
+  background-color: #ffffff;
+  border-left: 5px solid #3f5468;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   padding: 25px 20px;
@@ -1108,20 +1117,11 @@ textarea {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* Imagen o ícono */
-.proyecto-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
 /* Título del proyecto */
 .proyecto-nombre {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #1f2d3a;
+  color: #2d3b45;
   margin-bottom: 10px;
 }
 
@@ -1134,10 +1134,10 @@ textarea {
   text-align: justify;
 }
 
-/* Botón de acción */
+/* Botón */
 .btn-ver {
   display: inline-block;
-  background-color: #5b7aa1;
+  background-color: #3f5468;
   color: #ffffff;
   padding: 8px 18px;
   border-radius: 6px;
@@ -1148,12 +1148,12 @@ textarea {
 }
 
 .btn-ver:hover {
-  background-color: #4a698b;
+  background-color: #2d3b45;
 }
 
-/* Estado placeholder (cuando no hay proyectos aún) */
+/* Placeholder */
 .proyecto-card.placeholder {
-  background-color: #f0f2f5;
+  background-color: #f0f0f0;
   color: #666;
   font-style: italic;
   text-align: center;
@@ -1189,4 +1189,10 @@ textarea {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* --- Estilo general para todas las secciones principales --- */
+section {
+  background-color: #f2f2f2; /* Fondo gris claro uniforme */
+  border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
 }
