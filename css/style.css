@@ -204,13 +204,13 @@ textarea {
   display: none; }
 
 .home-hero {
-  color: #fff;
+  color: #000;
   background: 
-    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
-    url(.../docs/2.jpg); 
-  background-size: cover;
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), 
+    url(../docs/2.jpg);
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
