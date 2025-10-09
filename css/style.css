@@ -207,7 +207,7 @@ textarea {
   color: #fff;
   background: 
     linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
-    url(portfolio/docs/2.jpg); 
+    url(.../docs/2.jpg); 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
