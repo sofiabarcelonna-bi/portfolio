@@ -71,7 +71,7 @@ textarea {
   letter-spacing: 2px;
   text-align: center;
   color: #111;
-  text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.3); 
+  text-shadow: 3px 3px 6px rgba(50, 50, 50, 0.4); 
   margin-bottom: 2rem;
   font-weight: 700;
 }
@@ -187,7 +187,7 @@ textarea {
   text-align: center;
   width: 100%;
   line-height: 1.6;
-  text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.3); 
+  text-shadow: 2px 2px 4px rgba(60, 60, 60, 0.3); 
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -204,12 +204,13 @@ textarea {
   display: none; }
 
 .home-hero {
-  color: #000;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(240, 245, 255, 0.6)),
-              url(/docs/2.jpg); 
+  color: #fff;
+  background: 
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)),
+    url(/docs/2.jpg); 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
