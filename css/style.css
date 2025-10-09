@@ -759,26 +759,33 @@ textarea {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Sección Sobre Mi --- */
+/* --- Sección Sobre Mí --- */
+.sobre-mi-section {
+  background-color: #f2f2f2; /* Fondo gris claro uniforme */
+  padding: 80px 0;
+  border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
+}
+
 .sobre-mi-container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;     
+  align-items: stretch;
   gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
+
 .sobre-mi-foto {
-    flex: 0 0 450px;         
+  flex: 0 0 450px;
   display: flex;
-  align-items: stretch;      
+  align-items: stretch;
 }
 
 .sobre-mi-foto img {
   width: 100%;
-  height: 100%;           
-  object-fit: cover;       
+  height: 100%;
+  object-fit: cover;
   border-radius: 14px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
@@ -788,23 +795,41 @@ textarea {
   min-width: 300px;
 }
 
+.sobre-mi-texto h2.heading-secondary {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #000000; /* Negro sobrio */
+}
+
 .sobre-mi-texto p {
-  font-size: 1.3rem;       
-  line-height: 2;       
-  color: #000000;            
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #000000;
   margin-bottom: 20px;
   text-align: justify;
 }
 
-.sobre-mi-texto h2.heading-secondary {
-   font-size: 3rem;         
-  margin-bottom: 30px;
-  color: #000000;
-}
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-mi-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.sobre-mi-section {
-  background-color: #f1f3f4;
-  padding: 80px 0;
+  .sobre-mi-foto {
+    flex: 0 0 auto;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .sobre-mi-texto h2.heading-secondary {
+    font-size: 2.4rem;
+  }
+
+  .sobre-mi-texto p {
+    font-size: 1.15rem;
+  }
 }
 
 /* --- Sección Formación Académica --- */
