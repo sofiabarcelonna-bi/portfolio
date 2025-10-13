@@ -1381,17 +1381,67 @@ section {
   border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
 }
 
-/* ==== SECCIÓN DE PROYECTOS POWER BI ==== */
-.powerbi-embed {
-  width: 100%;
-  margin: 2rem auto;
+/* ======== ESTILO DE PÁGINAS POWER BI ======== */
+
+.powerbi-page {
+  background: #f8f9fa;
+  padding: 2rem 0;
 }
 
+.powerbi-container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.powerbi-title {
+  text-align: center;
+  color: #1d2b36;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.powerbi-subtitle {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.powerbi-text {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+/* ==== IFREAME ==== */
 .powerbi-embed iframe {
-  display: block;
   width: 100%;
-  height: 80vh; /* ocupa el 80% del alto visible de la ventana */
+  height: 90vh; /* ocupa el 90% de la altura visible */
   border: none;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+/* ==== BOTÓN VOLVER ==== */
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #002b45;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-volver:hover {
+  background-color: #004a77;
 }
