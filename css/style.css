@@ -1059,7 +1059,7 @@ textarea {
 
 /* --- Sección Proyectos --- */
 .proyectos-section {
-  padding: 50px 60px;
+  padding: 50px 60px 90px 60px;
   background-color: #f2f2f2;
   border-bottom: 1px solid #d4d2d2;
 }
@@ -1069,7 +1069,7 @@ textarea {
   font-size: 3rem;
   color: #000000;
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 10px; /* reducido */
   font-weight: 700;
 }
 
@@ -1079,16 +1079,16 @@ textarea {
   color: #2d3b45;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 8px; /* menor separación */
 }
 
 /* Descripción de categoría */
 .proyectos-descripcion {
   max-width: 1100px;
-  margin: 0 auto 60px auto;
-  font-size: 1.2rem;
+  margin: 0 auto 35px auto; /* espacio compacto */
+  font-size: 1.15rem;
   color: #333333;
-  text-align: justify;
+  text-align: center;
   line-height: 1.8;
 }
 
@@ -1096,11 +1096,11 @@ textarea {
 .proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 35px;
   justify-content: center;
   align-items: stretch;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto 70px auto; /* margen inferior amplio para separar del siguiente bloque */
   padding: 0 10px;
 }
 
@@ -1110,14 +1110,13 @@ textarea {
   border-left: 6px solid #3f5468;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  padding: 35px 30px;
+  padding: 35px 30px 100px 30px; /* más espacio inferior para botón */
   text-align: justify;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 400px; /* altura uniforme */
   position: relative;
+  min-height: 420px; /* altura uniforme */
 }
 
 /* Hover */
@@ -1139,14 +1138,16 @@ textarea {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
-  margin-bottom: 25px;
   text-align: justify;
   flex-grow: 1;
 }
 
 /* Botón */
 .btn-ver {
-  align-self: center; /* centrado horizontal */
+  position: absolute;
+  bottom: 25px; /* todos los botones a la misma altura */
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #3f5468;
   color: #ffffff;
   padding: 10px 24px;
@@ -1156,7 +1157,6 @@ textarea {
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.3s ease;
-  margin-top: auto;
 }
 
 .btn-ver:hover {
@@ -1165,7 +1165,7 @@ textarea {
 
 /* Espacio adicional entre categorías */
 .proyectos-categoria + .proyectos-categoria {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 /* --- Responsivo --- */
@@ -1173,16 +1173,17 @@ textarea {
   .proyectos-grid {
     max-width: 1100px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 35px;
+    gap: 30px;
   }
   .proyecto-card {
-    min-height: 380px;
+    min-height: 390px;
+    padding-bottom: 90px;
   }
 }
 
 @media (max-width: 992px) {
   .proyectos-section {
-    padding: 40px 30px;
+    padding: 40px 30px 70px 30px;
   }
   .proyectos-titulo {
     font-size: 2.6rem;
@@ -1191,17 +1192,17 @@ textarea {
     font-size: 1.8rem;
   }
   .proyectos-descripcion {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   .proyecto-card {
-    padding: 25px;
-    min-height: 360px;
+    padding: 25px 25px 80px 25px;
+    min-height: 370px;
   }
 }
 
 @media (max-width: 768px) {
   .proyectos-section {
-    padding: 40px 20px;
+    padding: 40px 20px 60px 20px;
   }
   .proyectos-titulo {
     font-size: 2.3rem;
@@ -1216,9 +1217,10 @@ textarea {
   }
   .proyecto-card {
     min-height: auto;
+    padding-bottom: 80px;
   }
   .btn-ver {
-    width: 100%;
+    bottom: 20px;
   }
 }
 
