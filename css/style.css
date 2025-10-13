@@ -1385,63 +1385,97 @@ section {
 
 .powerbi-page {
   background: #f8f9fa;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .powerbi-container {
-  width: 95%;
-  max-width: 1400px;
+  width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
-  background: #fff;
-  padding: 3rem;
+  background: #ffffff;
+  padding: 3rem 3.5rem;
   border-radius: 20px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* --- TITULOS Y TEXTO --- */
 .powerbi-title {
   text-align: center;
   color: #1d2b36;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .powerbi-subtitle {
   font-size: 1.3rem;
   color: #2c3e50;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
 
 .powerbi-text {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: #444;
-  line-height: 1.7;
-  margin-bottom: 2rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
   text-align: justify;
 }
 
-/* ==== IFREAME ==== */
-.powerbi-embed iframe {
-  width: 100%;
-  height: 90vh; /* ocupa el 90% de la altura visible */
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+/* --- IFREAME (Power BI embed) --- */
+.powerbi-embed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
 
-/* ==== BOTÓN VOLVER ==== */
+.powerbi-embed iframe {
+  width: 92%;
+  max-width: 1200px;
+  height: 700px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+}
+
+/* --- BOTÓN VOLVER --- */
 .btn-volver {
   display: inline-block;
-  margin-top: 2rem;
   background-color: #002b45;
-  color: white;
-  padding: 0.8rem 1.5rem;
+  color: #ffffff;
+  padding: 0.9rem 1.7rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s ease;
 }
 
 .btn-volver:hover {
   background-color: #004a77;
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 992px) {
+  .powerbi-container {
+    width: 95%;
+    padding: 2rem;
+  }
+  .powerbi-embed iframe {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .powerbi-title {
+    font-size: 2rem;
+  }
+  .powerbi-text {
+    font-size: 1rem;
+  }
+  .powerbi-embed iframe {
+    height: 500px;
+  }
 }
