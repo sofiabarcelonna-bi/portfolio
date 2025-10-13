@@ -1381,7 +1381,7 @@ section {
   border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
 }
 
-/* ======== ESTILO DE PÁGINAS POWER BI ======== */
+/* ======== ESTILO DE PÁGINAS POWER BI (ajustado) ======== */
 
 .powerbi-page {
   background: #f8f9fa;
@@ -1389,71 +1389,63 @@ section {
 }
 
 .powerbi-container {
-  width: 90%;
-  max-width: 1300px;
+  width: 85%; /* más angosto que antes para centrar mejor */
+  max-width: 1100px; /* coherente con el layout de otros proyectos */
   margin: 0 auto;
-  background: #ffffff;
-  padding: 3rem 3.5rem;
+  background: #fff;
+  padding: 2.5rem 3rem;
   border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-/* --- TITULOS Y TEXTO --- */
+/* Título y texto siguiendo la lógica de los otros proyectos */
 .powerbi-title {
-  text-align: center;
-  color: #1d2b36;
-  font-size: 2.3rem;
+  font-size: 1.8rem; /* mismo que los h1 de proyectos */
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  color: #1d2b36;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .powerbi-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem; /* igual que subtítulos */
   color: #2c3e50;
-  margin-bottom: 0.75rem;
   font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
 .powerbi-text {
-  font-size: 1.05rem;
+  font-size: 1rem;
+  line-height: 1.6;
   color: #444;
-  line-height: 1.8;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   text-align: justify;
 }
 
-/* --- IFREAME (Power BI embed) --- */
-.powerbi-embed {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2.5rem;
-}
-
+/* ==== IFRAME ajustado ==== */
 .powerbi-embed iframe {
-  width: 92%;
-  max-width: 1200px;
-  height: 700px;
+  width: 100%;
+  height: 70vh; /* antes 90vh → más equilibrado */
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.12);
 }
 
-/* --- BOTÓN VOLVER --- */
+/* ==== BOTÓN VOLVER ==== */
 .btn-volver {
   display: inline-block;
+  margin-top: 2rem;
   background-color: #002b45;
-  color: #ffffff;
-  padding: 0.9rem 1.7rem;
+  color: white;
+  padding: 0.7rem 1.3rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s, transform 0.2s ease;
+  transition: background 0.3s;
 }
 
 .btn-volver:hover {
   background-color: #004a77;
-  transform: translateY(-2px);
 }
 
 /* --- RESPONSIVO --- */
