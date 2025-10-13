@@ -27,36 +27,26 @@ headerLogoContainer.addEventListener('click', () => {
 });
 
 
-// --- FORMULARIO DE CONTACTO (Formspree + Popup) ---
-const contactoForm = document.querySelector(".contacto-form");
-if (contactoForm) {
-  contactoForm.addEventListener("submit", async function(event) {
-    event.preventDefault();
+// --- FORMULARIO DE CONTACTO ---
+const form = document.getElementById("contact-form");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("close-popup");
 
-    const formData = new FormData(contactoForm);
-
-    try {
-      const response = await fetch(contactoForm.action, {
-        method: contactoForm.method,
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        contactoForm.reset();
-        document.getElementById("popup-confirmacion").classList.add("mostrar");
-      } else {
-        alert("Ocurrió un error al enviar el mensaje. Intenta nuevamente.");
-      }
-    } catch (error) {
-      alert("Error de conexión. Por favor, intenta más tarde.");
-    }
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { Accept: "application/json" },
   });
 
-  const cerrarPopup = document.getElementById("cerrar-popup");
-  if (cerrarPopup) {
-    cerrarPopup.addEventListener("click", () => {
-      document.getElementById("popup-confirmacion").classList.remove("mostrar");
-    });
+  if (response.ok) {
+    popup.classList.remove("hidden");
+    form.reset();
   }
-}
+});
+
+closePopup.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
