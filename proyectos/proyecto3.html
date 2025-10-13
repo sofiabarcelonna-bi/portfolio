@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análisis de precios bursátiles mediante Cadenas de Markov | Sofía Barcelonna</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper"><a href="../index.html#inicio" class="header__link">Inicio</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#sobremi" class="header__link">Sobre mí</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#formacion" class="header__link">Formación académica</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#experiencia" class="header__link">Experiencia laboral</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#proyectos" class="header__link">Proyectos</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#contacto" class="header__link">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CONTENIDO DEL PROYECTO ===== -->
+  <main class="proyecto-detalle">
+    <div class="proyecto-detalle-container">
+
+      <!-- Título principal -->
+      <h1 class="proyecto-titulo">
+        Análisis de precios bursátiles mediante Cadenas de Markov
+      </h1>
+
+      <!-- Subtítulo -->
+      <h2 class="proyecto-subtitulo">Descripción</h2>
+
+      <!-- Texto descriptivo -->
+      <p class="proyecto-texto">
+        El estudio implementa un enfoque cuantitativo basado en <strong>Cadenas de Markov</strong> para modelar la evolución de los precios diarios de la acción de <strong>Mercado Libre (MELI)</strong>. 
+        A partir de la propiedad de Markov, que establece que el estado futuro depende únicamente del actual, se transformaron las variaciones diarias en una secuencia de estados discretos —suba, baja o estabilidad—, 
+        sobre los cuales se construyó la <strong>matriz de transición empírica</strong>. Esta matriz permitió estimar la probabilidad de que el mercado mantenga o cambie su tendencia, revelando una leve propensión hacia las subas y una marcada persistencia direccional.
+      </p>
+
+      <p class="proyecto-texto">
+        Posteriormente, se estimó la <strong>distribución estacionaria</strong> de largo plazo y se realizaron <strong>simulaciones Monte Carlo</strong> para proyectar trayectorias hipotéticas de precios, 
+        replicando comportamientos realistas bajo incertidumbre. Los resultados evidencian la capacidad del modelo para capturar la dinámica estocástica del mercado y anticipar posibles escenarios futuros.
+      </p>
+
+      <p class="proyecto-texto">
+        El análisis demuestra que las Cadenas de Markov constituyen una herramienta robusta para la <strong>predicción de movimientos bursátiles</strong> en contextos de volatilidad e inercia de corto plazo, 
+        ofreciendo una aproximación cuantitativa que combina rigor estadístico y aplicabilidad práctica para la toma de decisiones financieras.
+      </p>
+
+      <!-- Botones -->
+      <div class="proyecto-boton-container">
+        <!-- Si luego tenés el PDF, se puede agregar aquí -->
+        <!-- <a href="../docs/markov.pdf" target="_blank" class="btn-ver-doc">📄 Ver Documento Completo (PDF)</a> -->
+        <a href="../index.html#proyectos" class="btn-volver">⬅ Volver a Proyectos</a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
