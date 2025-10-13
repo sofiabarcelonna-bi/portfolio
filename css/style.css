@@ -1076,8 +1076,8 @@ textarea {
 /* Contenedor por categoría */
 .proyectos-categoria {
   max-width: 1100px;
-  margin: 0 auto 80px auto;
-  padding: 50px;
+  margin: 0 auto 90px auto; /* ↑ Mayor separación entre bloques */
+  padding: 45px 50px 55px 50px; /* Ajuste equilibrado */
   background-color: #ffffff;
   border-left: 6px solid #3f5468;
   border-radius: 12px;
@@ -1090,15 +1090,28 @@ textarea {
   color: #2d3b45;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* ↓ Reducido (antes 40px) */
 }
 
-/* Grid de proyectos */
+/* Descripción de categoría */
+.proyectos-descripcion {
+  max-width: 900px;
+  margin: 0 auto 35px auto; /* Margen inferior más natural */
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+/* --- GRID ADAPTABLE DE PROYECTOS --- */
 .proyectos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Tarjeta individual */
@@ -1110,25 +1123,30 @@ textarea {
   padding: 25px 30px;
   text-align: justify;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  width: 100%;
-  max-width: 260px; /* Controla el ancho (4 por fila aprox.) */
-  min-height: 240px; /* Altura consistente */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 240px;
+
+  /* Adaptación dinámica */
+  flex: 1 1 calc(25% - 30px);
+  max-width: 270px;
+}
+
+/* Ajuste proporcional cuando hay menos tarjetas */
+.proyectos-grid > .proyecto-card:nth-last-child(-n+3):first-child,
+.proyectos-grid > .proyecto-card:nth-last-child(-n+3):first-child ~ .proyecto-card {
+  max-width: 320px; /* Si hay 3 proyectos */
+}
+
+.proyectos-grid > .proyecto-card:nth-last-child(-n+2):first-child,
+.proyectos-grid > .proyecto-card:nth-last-child(-n+2):first-child ~ .proyecto-card {
+  max-width: 400px; /* Si hay 2 proyectos */
 }
 
 .proyecto-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-}
-
-/* Contenido interior */
-.proyecto-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /* Título del proyecto */
@@ -1175,17 +1193,7 @@ textarea {
   border-left: 5px solid #ccc;
 }
 
-/* Descripción de categoría */
-.proyectos-descripcion {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  font-size: 1.2rem;
-  color: #333333;
-  text-align: justify;
-  line-height: 1.8;
-}
-
-/* Responsivo */
+/* --- Responsivo --- */
 @media (max-width: 1024px) {
   .proyecto-card {
     max-width: 300px;
@@ -1201,6 +1209,7 @@ textarea {
   }
   .proyectos-subtitulo {
     font-size: 1.6rem;
+    margin-bottom: 15px;
   }
   .proyecto-nombre {
     font-size: 1.2rem;
