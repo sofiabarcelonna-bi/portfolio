@@ -6,7 +6,6 @@
   <title>Análisis de precios disponibles y futuros de granos | Sofía Barcelonna</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" type="image/png" href="../favicon.png">
-  <link rel="stylesheet" href="../css/powerbi.css"> <!-- Nuevo CSS exclusivo -->
 </head>
 
 <body>
@@ -15,43 +14,48 @@
     <div class="header__content">
       <div class="header__main">
         <ul class="header__links">
-          <li><a href="../index.html#inicio" class="header__link">Inicio</a></li>
-          <li><a href="../index.html#sobremi" class="header__link">Sobre mí</a></li>
-          <li><a href="../index.html#formacion" class="header__link">Formación académica</a></li>
-          <li><a href="../index.html#experiencia" class="header__link">Experiencia laboral</a></li>
-          <li><a href="../index.html#proyectos" class="header__link">Proyectos</a></li>
-          <li><a href="../index.html#contacto" class="header__link">Contacto</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#inicio" class="header__link">Inicio</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#sobremi" class="header__link">Sobre mí</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#formacion" class="header__link">Formación académica</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#experiencia" class="header__link">Experiencia laboral</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#proyectos" class="header__link">Proyectos</a></li>
+          <li class="header__link-wrapper"><a href="../index.html#contacto" class="header__link">Contacto</a></li>
         </ul>
       </div>
     </div>
   </header>
 
-  <!-- ===== CONTENIDO POWER BI ===== -->
+  <!-- ===== CONTENIDO DEL PROYECTO POWER BI ===== -->
   <main class="powerbi-page">
     <div class="powerbi-container">
+
+      <!-- Título -->
       <h1 class="powerbi-title">Análisis de precios disponibles y futuros de granos</h1>
 
+      <!-- Subtítulo -->
       <h2 class="powerbi-subtitle">Descripción</h2>
+
+      <!-- Texto descriptivo -->
       <p class="powerbi-text">
         Este tablero interactivo integra series históricas de precios disponibles y futuros de soja, maíz y trigo,
-        permitiendo analizar su comportamiento, correlaciones y relaciones intermercado. 
-        Incluye visualizaciones de spreads entre contratos, basis locales e internacionales y ratios comparativos con insumos como la urea.
+        permitiendo analizar su comportamiento, correlaciones y relaciones intermercado. Incluye visualizaciones de spreads entre contratos,
+        basis locales e internacionales y ratios comparativos. 
         El objetivo es ofrecer una visión integral del mercado agrícola argentino y su evolución temporal.
       </p>
 
-      <!-- ===== POWER BI EMBEBIDO ===== -->
-      <div class="powerbi-container">
-  <iframe 
-    title="Análisis de precios disponibles y futuros de granos"
-    src="https://app.powerbi.com/view?r=eyJrIjoiNzAxYTEyOWMtNDc4ZS00ZWFlLTg2NWMtMjNjYjEzZjEyZTk3IiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9&pageName=7a5d9e26209ea426db7e" 
-    frameborder="0"
-    allowFullScreen="true">
-  </iframe>
-</div>
-
-      <div class="powerbi-footer">
-        <a href="../index.html#proyectos" class="btn-volver">⬅ Volver a Proyectos</a>
+      <!-- Power BI embed -->
+      <div class="powerbi-embed">
+        <iframe 
+          title="Análisis granos disponibles y futuros" 
+          src="https://app.powerbi.com/view?r=eyJrIjoiNzAxYTEyOWMtNDc4ZS00ZWFlLTg2NWMtMjNjYjEzZjEyZTk3IiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9&pageName=7a5d9e26209ea426db7e"
+          frameborder="0"
+          allowFullScreen="true">
+        </iframe>
       </div>
+
+      <!-- Botón volver -->
+      <a href="../index.html#proyectos" class="btn-volver">⬅ Volver a Proyectos</a>
+
     </div>
   </main>
 </body>
