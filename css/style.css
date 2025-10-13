@@ -1059,8 +1059,8 @@ textarea {
 
 /* --- Sección Proyectos --- */
 .proyectos-section {
-  padding: 80px 40px;
-  background-color: #f2f2f2; /* Fondo gris claro */
+  padding: 50px 40px; /* 🔹 antes 80px — reduce el espacio superior */
+  background-color: #f2f2f2;
   border-bottom: 1px solid #d4d2d2;
 }
 
@@ -1069,19 +1069,8 @@ textarea {
   font-size: 3rem;
   color: #000000;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px; /* 🔹 antes 60px — menor espacio entre títulos */
   font-weight: 700;
-}
-
-/* Contenedor por categoría */
-.proyectos-categoria {
-  max-width: 1100px;
-  margin: 0 auto 90px auto; /* ↑ Mayor separación entre bloques */
-  padding: 45px 50px 55px 50px; /* Ajuste equilibrado */
-  background-color: #ffffff;
-  border-left: 6px solid #3f5468;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Subtítulo de categoría */
@@ -1090,13 +1079,13 @@ textarea {
   color: #2d3b45;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px; /* ↓ Reducido (antes 40px) */
+  margin-bottom: 10px; /* 🔹 más compacto */
 }
 
 /* Descripción de categoría */
 .proyectos-descripcion {
-  max-width: 900px;
-  margin: 0 auto 35px auto; /* Margen inferior más natural */
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
   font-size: 1.2rem;
   color: #333333;
   text-align: justify;
@@ -1106,12 +1095,13 @@ textarea {
 /* --- GRID ADAPTABLE DE PROYECTOS --- */
 .proyectos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 🔹 Cards más anchas */
+  gap: 35px; /* 🔹 más espacio entre tarjetas */
   justify-content: center;
   align-items: stretch;
-  max-width: 1200px;
+  max-width: 1400px; /* 🔹 antes 1200px — ocupa más ancho total */
   margin: 0 auto;
+  padding: 0 20px; /* 🔹 margen lateral visual */
 }
 
 /* Tarjeta individual */
@@ -1120,30 +1110,21 @@ textarea {
   border-left: 6px solid #3f5468;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  padding: 25px 30px;
+  padding: 30px;
   text-align: justify;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 240px;
-
-  /* Adaptación dinámica */
-  flex: 1 1 calc(25% - 30px);
-  max-width: 270px;
+  min-height: 360px; /* 🔹 más alta para uniformar los botones */
 }
 
-/* Ajuste proporcional cuando hay menos tarjetas */
-.proyectos-grid > .proyecto-card:nth-last-child(-n+3):first-child,
-.proyectos-grid > .proyecto-card:nth-last-child(-n+3):first-child ~ .proyecto-card {
-  max-width: 320px; /* Si hay 3 proyectos */
+/* Mantiene proporciones dinámicas */
+.proyectos-grid > .proyecto-card {
+  flex: 1 1 calc(25% - 35px);
 }
 
-.proyectos-grid > .proyecto-card:nth-last-child(-n+2):first-child,
-.proyectos-grid > .proyecto-card:nth-last-child(-n+2):first-child ~ .proyecto-card {
-  max-width: 400px; /* Si hay 2 proyectos */
-}
-
+/* Hover */
 .proyecto-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
@@ -1151,7 +1132,7 @@ textarea {
 
 /* Título del proyecto */
 .proyecto-nombre {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #2d3b45;
   margin-bottom: 10px;
@@ -1162,22 +1143,24 @@ textarea {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   text-align: justify;
+  flex-grow: 1; /* 🔹 empuja el botón al fondo */
 }
 
 /* Botón */
 .btn-ver {
-  display: inline-block;
+  align-self: flex-start;
   background-color: #3f5468;
   color: #ffffff;
-  padding: 8px 18px;
+  padding: 10px 22px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.3s ease;
+  margin-top: auto; /* 🔹 fuerza alineación uniforme */
 }
 
 .btn-ver:hover {
