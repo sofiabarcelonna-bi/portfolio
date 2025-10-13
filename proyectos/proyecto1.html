@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="header__content">
       <div class="header__main">
@@ -24,36 +25,46 @@
     </div>
   </header>
 
+  <!-- ===== CONTENIDO DEL PROYECTO ===== -->
   <main class="proyecto-detalle">
-    <div class="proyecto-detalle-container" style="max-width: 1000px; margin: 100px auto; background-color: #fff; border-radius: 12px; padding: 50px; box-shadow: 0 6px 18px rgba(0,0,0,0.1);">
-      <h1 style="font-size: 2.4rem; color: #2d3b45; margin-bottom: 25px; text-align: center;">
+    <div class="proyecto-detalle-container">
+
+      <!-- Título principal -->
+      <h1 class="proyecto-titulo">
         Análisis integral de la eficiencia y productividad en la producción de soja
       </h1>
 
-      <img src="../img/proyecto_soja.jpg" alt="Análisis integral de la eficiencia y productividad en la producción de soja" style="width: 100%; border-radius: 8px; margin-bottom: 35px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <!-- Subtítulo -->
+      <h2 class="proyecto-subtitulo">Descripción</h2>
 
-      <p style="font-size: 1.2rem; line-height: 1.9; text-align: justify; color: #333;">
-        El trabajo presenta un análisis integral de la eficiencia y productividad en la producción de soja, combinando metodologías de Business Intelligence con herramientas de análisis econométrico y multivariado.
+      <!-- Texto descriptivo -->
+      <p class="proyecto-texto">
+        El trabajo presenta un análisis integral de la eficiencia y productividad en la producción de soja, combinando metodologías de Business Intelligence con herramientas de análisis econométrico y multivariado. 
         A partir de encuestas estructuradas a productores agropecuarios, se construyó una base de datos que permitió estimar la eficiencia relativa de las unidades productivas mediante el 
         <strong>Análisis Envolvente de Datos (DEA)</strong>, bajo supuestos de retornos variables y constantes a escala.
       </p>
 
-      <p style="font-size: 1.2rem; line-height: 1.9; text-align: justify; color: #333;">
-        Complementariamente, se aplicaron técnicas de <strong>análisis de conglomerados (K-Means)</strong> y <strong>análisis de componentes principales (PCA)</strong> para identificar perfiles productivos y patrones de comportamiento dentro del sector.
+      <p class="proyecto-texto">
+        Complementariamente, se aplicaron técnicas de <strong>análisis de conglomerados (K-Means)</strong> y <strong>análisis de componentes principales (PCA)</strong> para identificar perfiles productivos y patrones de comportamiento dentro del sector. 
         Finalmente, se implementó un <strong>modelo Tobit</strong> para examinar las variables explicativas asociadas a los niveles de eficiencia estimados, considerando factores tecnológicos, de gestión, de acceso al financiamiento y de toma de decisiones operativas.
       </p>
 
-      <p style="font-size: 1.2rem; line-height: 1.9; text-align: justify; color: #333;">
-        Los resultados indican que la eficiencia técnica está más vinculada a la gestión integral, la planificación y la adopción de buenas prácticas que al tamaño o la magnitud de la inversión.
-        El estudio permitió reconocer estrategias replicables entre productores eficientes y aportar un marco empírico de apoyo a la toma de decisiones en el ámbito agroindustrial,
+      <p class="proyecto-texto">
+        Los resultados indican que la eficiencia técnica está más vinculada a la gestión integral, la planificación y la adopción de buenas prácticas que al tamaño o la magnitud de la inversión. 
+        El estudio permitió reconocer estrategias replicables entre productores eficientes y aportar un marco empírico de apoyo a la toma de decisiones en el ámbito agroindustrial, 
         destacando el valor del análisis de datos y la modelización estadística como herramientas de gestión aplicada al agro.
       </p>
 
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="../docs/tesis_grado.pdf" target="_blank" class="btn-ver" style="font-size: 1.1rem; padding: 12px 24px;">
+      <!-- Botones -->
+      <div class="proyecto-boton-container">
+        <a href="../docs/tesis_grado.pdf" target="_blank" class="btn-ver-doc">
           📄 Ver Documento Completo (PDF)
         </a>
+        <a href="../index.html#proyectos" class="btn-volver">
+          ⬅ Volver a Proyectos
+        </a>
       </div>
+
     </div>
   </main>
 </body>
