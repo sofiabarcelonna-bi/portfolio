@@ -1179,6 +1179,15 @@ textarea {
   }
 }
 
+.proyectos-descripcion {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 1.2rem;
+  color: #333333;
+  text-align: justify;
+  line-height: 1.8;
+}
+
 /* 🔹 Animación de aparición elegante PARA LA PARTE DE ADELANTE no tocar*/
 @keyframes fadeInUp {
   0% {
