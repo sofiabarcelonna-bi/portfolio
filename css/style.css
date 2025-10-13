@@ -1381,3 +1381,22 @@ section {
   border-bottom: 1px solid #d4d2d2; /* Línea divisoria sobria */
 }
 
+/* ==== EMBED POWER BI ==== */
+.powerbi-embed {
+  position: relative;
+  width: 100%;
+  max-width: 1100px; /* podés subirlo a 1200px si querés más ancho */
+  margin: 2rem auto;
+  padding-top: 56.25%; /* proporción 16:9 */
+}
+
+.powerbi-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
