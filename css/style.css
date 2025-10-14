@@ -1429,27 +1429,28 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.12);
 }
 
-/* ==== BOTÓN VOLVER (uniforme con los demás proyectos) ==== */
+/* ==== BOTÓN VOLVER (totalmente igual a los otros proyectos) ==== */
 .powerbi-page .btn-volver {
-  display: flex;
-  justify-content: center; /* 🔹 centra horizontalmente */
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
-  margin: 40px auto 0; /* 🔹 espacio superior, centrado automático */
-  min-width: 230px; /* 🔹 mismo ancho que los otros botones */
+  margin: 40px auto 0;
+  min-width: 230px;
+  height: 48px;
   text-align: center;
-  padding: 8px 18px;
+  padding: 0 18px;
   font-weight: 600;
   font-size: 0.95rem;
   border-radius: 6px;
-  background-color: transparent;
-  color: #3f5468;
-  border: 2px solid #3f5468;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  background-color: #3f5468;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 .powerbi-page .btn-volver:hover {
-  background-color: #3f5468;
-  color: #ffffff;
+  background-color: #2d3b45;
   transform: translateY(-2px);
 }
 
