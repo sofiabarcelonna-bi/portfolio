@@ -1290,45 +1290,36 @@ textarea {
   margin-top: 40px;
 }
 
-/* Botón principal (ver documento) */
+/* 🔹 Botones del proyecto (uniformes) */
 .btn-ver-doc,
 .btn-volver {
-  min-width: 230px; /* 🔹 Ancho uniforme */
-  text-align: center; /* 🔹 Alinea texto e ícono */
+  min-width: 230px;          
+  height: 48px;              
+  text-align: center;
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.95rem;
-  padding: 8px 18px;
+  padding: 0 18px;          
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
   line-height: 1;
-}
-
-/* Estilo del botón principal */
-.btn-ver-doc {
-  background-color: #3f5468;
-  color: #ffffff;
+  cursor: pointer;
   border: none;
 }
 
-.btn-ver-doc:hover {
-  background-color: #2d3b45;
-  transform: translateY(-2px);
-}
-
-/* Estilo del botón secundario */
+/* 🔹 Color principal y hover uniforme */
+.btn-ver-doc,
 .btn-volver {
-  background-color: transparent;
-  color: #3f5468;
-  border: 2px solid #3f5468;
-}
-
-.btn-volver:hover {
   background-color: #3f5468;
   color: #ffffff;
+}
+
+.btn-ver-doc:hover,
+.btn-volver:hover {
+  background-color: #2d3b45;
   transform: translateY(-2px);
 }
 
@@ -1352,7 +1343,7 @@ textarea {
   }
   .btn-ver-doc,
   .btn-volver {
-    width: 100%;
+    width: 100%; 
     text-align: center;
   }
 }
@@ -1435,23 +1426,6 @@ section {
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.12);
-}
-
-/* ==== BOTÓN VOLVER ==== */
-.btn-volver {
-  display: inline-block;
-  margin-top: 2rem;
-  background-color: #002b45;
-  color: white;
-  padding: 0.7rem 1.3rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s;
-}
-
-.btn-volver:hover {
-  background-color: #004a77;
 }
 
 /* --- RESPONSIVO --- */
