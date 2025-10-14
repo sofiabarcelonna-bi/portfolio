@@ -1395,27 +1395,28 @@ section {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
-/* Título y texto siguiendo la lógica de los otros proyectos */
+/* ==== TÍTULO Y TEXTO UNIFICADOS CON LA SECCIÓN PROYECTOS ==== */
 .powerbi-title {
-  font-size: 1.8rem; /* mismo que los h1 de proyectos */
+  font-size: 2.4rem; 
   font-weight: 700;
-  color: #1d2b36;
+  color: #2d3b45;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 40px;
 }
 
 .powerbi-subtitle {
-  font-size: 1.2rem; /* igual que subtítulos */
-  color: #2c3e50;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+  font-size: 1.6rem; 
+  font-weight: 700;
+  color: #3f5468;
+  margin-bottom: 15px;
+  text-align: left; 
 }
 
 .powerbi-text {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444;
-  margin-bottom: 2rem;
+  font-size: 1.15rem; 
+  color: #333333;
+  line-height: 1.8;
+  margin-bottom: 25px;
   text-align: justify;
 }
 
@@ -1428,6 +1429,37 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.12);
 }
 
+/* ==== BOTÓN VOLVER (uniforme con los demás proyectos) ==== */
+.powerbi-page .btn-volver {
+  display: flex;
+  justify-content: center; /* 🔹 centra horizontalmente */
+  align-items: center;
+  margin: 40px auto 0; /* 🔹 espacio superior, centrado automático */
+  min-width: 230px; /* 🔹 mismo ancho que los otros botones */
+  text-align: center;
+  padding: 8px 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #3f5468;
+  border: 2px solid #3f5468;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.powerbi-page .btn-volver:hover {
+  background-color: #3f5468;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+  .powerbi-page .btn-volver {
+    width: 100%;
+    justify-content: center;
+  }
+}
 /* --- RESPONSIVO --- */
 @media (max-width: 992px) {
   .powerbi-container {
