@@ -1294,12 +1294,15 @@ textarea {
 .btn-ver-doc {
   background-color: #3f5468;
   color: #ffffff;
-  padding: 12px 24px;
+  padding: 8px 18px; /* antes 12x24 → más compacto */
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem; /* ligeramente más chico */
   transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* separación ícono-texto */
 }
 
 .btn-ver-doc:hover {
