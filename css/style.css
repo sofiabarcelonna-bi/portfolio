@@ -1348,6 +1348,110 @@ textarea {
   }
 }
 
+/* --- Sección Otros Proyectos --- */
+.otrosproyectos-section {
+  padding: 80px 40px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #d4d2d2;
+}
+
+/* Título principal */
+.otrosproyectos-titulo {
+  font-size: 3rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+/* Descripción */
+.otrosproyectos-descripcion {
+  text-align: center;
+  color: #333333;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Contenedor general */
+.otrosproyectos-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.otrosproyectos-card {
+  background-color: #ffffff;
+  border-left: 6px solid #3f5468;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 35px;
+  text-align: justify;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.otrosproyectos-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo */
+.otrosproyectos-subtitulo {
+  font-size: 1.8rem;
+  color: #2d3b45;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Texto general */
+.otrosproyectos-card > p {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Listado */
+.otrosproyectos-card ul {
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.otrosproyectos-card ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.otrosproyectos-card ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #3f5468;
+  font-size: 1.2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .otrosproyectos-section {
+    padding: 40px 20px;
+  }
+  .otrosproyectos-titulo {
+    font-size: 2.4rem;
+  }
+  .otrosproyectos-subtitulo {
+    font-size: 1.5rem;
+  }
+  .otrosproyectos-card > p,
+  .otrosproyectos-card ul li {
+    font-size: 1.1rem;
+  }
+}
+
+
 /* 🔹 Animación de aparición elegante */
 @keyframes fadeInUp {
   0% {
