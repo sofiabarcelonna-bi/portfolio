@@ -1348,29 +1348,30 @@ textarea {
   }
 }
 
-/* --- Sección Otros Proyectos --- */
+/* --- Sección Otros Proyectos  --- */
 .otrosproyectos-section {
-  padding: 60px 40px 80px 40px;    
+  padding: 40px 40px 60px 40px; 
   background-color: #f2f2f2;
   border-bottom: 1px solid #d4d2d2;
+  margin-top: -40px; 
 }
 
 /* Título principal */
 .otrosproyectos-titulo {
-  font-size: 2.6rem;              
-  color: #000000;
+  font-size: 2rem; 
+  color: #000;
   text-align: center;
-  margin-bottom: 20px;             
+  margin-bottom: 10px;
   font-weight: 700;
 }
 
 /* Descripción */
 .otrosproyectos-descripcion {
   text-align: center;
-  color: #444;
-  font-size: 1.1rem;                
-  margin-bottom: 35px;
-  line-height: 1.7;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -1384,35 +1385,36 @@ textarea {
 
 /* Tarjeta individual */
 .otrosproyectos-card {
-  background-color: #ffffff;
+  background-color: #fff;
   border-left: 6px solid #3f5468;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  padding: 35px 30px;
-  margin-bottom: 25px;               
+  padding: 30px;
+  margin-bottom: 25px;
   text-align: justify;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .otrosproyectos-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
 }
 
 /* Subtítulo */
 .otrosproyectos-subtitulo {
-  font-size: 1.35rem;                
+  font-size: 1.35rem; 
   color: #2d3b45;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* Texto general */
-.otrosproyectos-card > p {
-  font-size: 1.1rem;               
-  color: #333333;
-  margin-bottom: 10px;
+.otrosproyectos-card > p,
+.otrosproyectos-card ul li {
+  font-size: 1.05rem;
+  color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Listado */
@@ -1425,33 +1427,26 @@ textarea {
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px;
-  line-height: 1.6;
-  font-size: 1.05rem;
-  text-align: justify;
 }
 
 .otrosproyectos-card ul li::before {
-  content: "\2022";
+  content: "•";
   position: absolute;
   left: 0;
   color: #3f5468;
-  font-size: 1.2rem;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .otrosproyectos-section {
-    padding: 40px 20px 60px 20px;
+    padding: 30px 20px 40px 20px;
+    margin-top: -30px;
   }
   .otrosproyectos-titulo {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
   .otrosproyectos-subtitulo {
-    font-size: 1.3rem;
-  }
-  .otrosproyectos-card > p,
-  .otrosproyectos-card ul li {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
