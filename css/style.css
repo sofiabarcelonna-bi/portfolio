@@ -1729,25 +1729,23 @@ section {
   transform: scale(1.02);
 }
 
-/* --- Íconos de contacto alternativos --- */
-.contact-links {
+/* --- Íconos de Contacto --- */
+.contact-icons {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
-  margin-top: 3rem;
 }
 
 .contact-icon img {
-  width: 48px;
-  height: 48px;
-  transition: transform 0.25s ease, filter 0.25s ease;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .contact-icon img:hover {
-  transform: scale(1.12);
-  filter: brightness(1.15);
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* Adaptación para pantallas pequeñas */
