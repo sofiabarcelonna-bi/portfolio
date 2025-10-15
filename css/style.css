@@ -1614,17 +1614,17 @@ section {
 }
 
 .contact-title {
-  font-size: 2.3rem;
+  font-size: 3rem;          
   font-weight: 700;
-  color: #002b45; /* azul institucional */
+  color: #002b45;
   margin-bottom: 1rem;
 }
 
 .contact-subtitle {
   color: #444;
-  font-size: 1.1rem;
+  font-size: 1.15rem;     
   margin-bottom: 3rem;
-  line-height: 1.7;
+  line-height: 1.8;        
 }
 
 .contact-form {
@@ -1735,9 +1735,15 @@ section {
   margin-bottom: 5rem;     
 }
 
+/* Ícono de LinkedIn ligeramente más grande */
+.contact-icon img.linkedin-icon {
+  width: 100px;   /* antes 85px */
+  height: 100px;
+}
+
 .contact-icon {
-  width: 85px;            
-  height: 85px;
+  width: 90px;            
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
