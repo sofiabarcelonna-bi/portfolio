@@ -1454,6 +1454,25 @@ section {
   transform: translateY(-2px);
 }
 
+/* === Ajuste de Soluciones de Inteligencia de Negocios === */
+
+/* Centrar y limitar el ancho de los proyectos BI */
+.proyectos-bi-grid {
+  max-width: 1000px;       /* mismo ancho visual que los proyectos académicos */
+  margin: 0 auto 70px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Asegurar que las tarjetas BI mantengan proporciones uniformes */
+.proyectos-bi-grid .proyecto-card {
+  max-width: 400px;        /* limita el ancho individual */
+  margin: 0 auto;
+}
+
 /* --- RESPONSIVO --- */
 @media (max-width: 768px) {
   .powerbi-page .btn-volver {
