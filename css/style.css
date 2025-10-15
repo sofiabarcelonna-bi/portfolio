@@ -1728,3 +1728,35 @@ section {
   background-color: #0065a4;
   transform: scale(1.02);
 }
+
+/* --- Íconos de contacto alternativos --- */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+}
+
+.contact-icon img:hover {
+  transform: scale(1.12);
+  filter: brightness(1.15);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-links {
+    gap: 1.5rem;
+  }
+  .contact-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
