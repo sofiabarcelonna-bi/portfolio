@@ -1350,27 +1350,30 @@ textarea {
 
 /* --- Sección Otros Proyectos --- */
 .otrosproyectos-section {
-  padding: 80px 40px;
+  padding: 60px 40px 80px 40px;    
   background-color: #f2f2f2;
   border-bottom: 1px solid #d4d2d2;
 }
 
 /* Título principal */
 .otrosproyectos-titulo {
-  font-size: 3rem;
+  font-size: 2.6rem;              
   color: #000000;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;             
   font-weight: 700;
 }
 
 /* Descripción */
 .otrosproyectos-descripcion {
   text-align: center;
-  color: #333333;
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  color: #444;
+  font-size: 1.1rem;                
+  margin-bottom: 35px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Contenedor general */
@@ -1385,8 +1388,8 @@ textarea {
   border-left: 6px solid #3f5468;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  padding: 40px;
-  margin-bottom: 35px;
+  padding: 35px 30px;
+  margin-bottom: 25px;               
   text-align: justify;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -1398,7 +1401,7 @@ textarea {
 
 /* Subtítulo */
 .otrosproyectos-subtitulo {
-  font-size: 1.8rem;
+  font-size: 1.35rem;                
   color: #2d3b45;
   font-weight: 700;
   margin-bottom: 12px;
@@ -1406,23 +1409,24 @@ textarea {
 
 /* Texto general */
 .otrosproyectos-card > p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;               
   color: #333333;
   margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 /* Listado */
 .otrosproyectos-card ul {
-  padding-left: 1.5rem;
   list-style: none;
+  padding-left: 1.5rem;
 }
 
 .otrosproyectos-card ul li {
   position: relative;
   margin-bottom: 10px;
   padding-left: 25px;
-  line-height: 1.8;
-  font-size: 1.2rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
   text-align: justify;
 }
 
@@ -1437,20 +1441,19 @@ textarea {
 /* Responsivo */
 @media (max-width: 768px) {
   .otrosproyectos-section {
-    padding: 40px 20px;
+    padding: 40px 20px 60px 20px;
   }
   .otrosproyectos-titulo {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
   .otrosproyectos-subtitulo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .otrosproyectos-card > p,
   .otrosproyectos-card ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
-
 
 /* 🔹 Animación de aparición elegante */
 @keyframes fadeInUp {
