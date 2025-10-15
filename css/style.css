@@ -1610,10 +1610,10 @@ section {
 
 /* ======== CONTACTO ======== */
 .contact-section {
-  background-color: #fff;
-  padding: 6rem 2rem; /* más espacio */
+  background-color: transparent;
+  padding: 6rem 2rem;
   text-align: center;
-  max-width: 900px; /* más ancho */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1654,6 +1654,61 @@ section {
   border-color: #004a77;
   box-shadow: 0 0 4px rgba(0, 74, 119, 0.3);
   outline: none;
+}
+
+/* --- POPUP DE CONFIRMACIÓN --- */
+.hidden {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.popup-content h3 {
+  color: #002b45;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.popup-content p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.popup-content button {
+  background-color: #004a77;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.popup-content button:hover {
+  background-color: #0065a4;
 }
 
 /* === BOTÓN AZUL ELEGANTE === */
