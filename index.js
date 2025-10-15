@@ -33,20 +33,31 @@ const popup = document.getElementById("popup");
 const closePopup = document.getElementById("close-popup");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: data,
-    headers: { Accept: "application/json" },
-  });
+  e.preventDefault(); // Evita la redirección a Formspree
 
-  if (response.ok) {
-    popup.classList.remove("hidden");
-    form.reset();
+  const data = new FormData(form);
+
+  try {
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { Accept: "application/json" },
+    });
+
+    if (response.ok) {
+      // Mostrar popup
+      popup.classList.remove("hidden");
+      // Borrar contenido del formulario
+      form.reset();
+    } else {
+      alert("Hubo un problema al enviar el mensaje. Por favor, intentá nuevamente.");
+    }
+  } catch (error) {
+    alert("Error de conexión. Intentá más tarde.");
   }
 });
 
+// Cerrar popup
 closePopup.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
