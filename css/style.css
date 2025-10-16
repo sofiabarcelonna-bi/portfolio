@@ -1791,6 +1791,19 @@ section {
   display: block;
 }
 
+/* --- Ajuste del hover para LinkedIn --- */
+.linkedin-icon {
+  transform: scale(1.3);
+  transform-origin: center;
+  display: block;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.linkedin-icon:hover {
+  transform: scale(1.5); /* 1.3 * 1.15 ≈ 1.5 para igualar el efecto */
+  opacity: 0.85;
+}
+
 /* ======== AJUSTE MENÚ EN CELULAR ======== */
 @media (max-width: 768px) {
   .header__main-ham-menu-cont {
